@@ -1,0 +1,55 @@
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.advantages__item {
+  padding: 40px;
+  border: 1px solid #EBEBEB;
+  width: 595px;
+  margin-bottom: 29px;
+  background: linear-gradient(to right, #00B2FF 1%, #fff 1%);
+}
+
+.advantages__item h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #00B2FF;
+}
+
+.advantages__item svg {
+  fill: #00B2FF;
+}
+
+.advantages__item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: currentColor;
+}
+
+.advantages__item:hover {
+  background: linear-gradient(to right, #00B2FF 100%, #fff 2%);
+  color: #F2F5F7;
+}
+
+.advantages__item:hover svg {
+  fill: #F2F5F7;
+}
+
+.advantages__item:hover h3 {
+  color: #F2F5F7;
+}
