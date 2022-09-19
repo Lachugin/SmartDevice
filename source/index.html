@@ -14,12 +14,14 @@
       <div class="container">
         <nav class="header__nav">
           <a class="logo">
-            <svg width="215" height="55">
-              <use xlink:href="img/sprite_auto.svg#logo"></use>
-            </svg>
+            <picture>
+              <source media="(max-width: 767px)"
+                      srcset="img/sprite/logo-mobile.svg">
+              <img src="img/sprite/logo.svg" width="215" height="55" alt="Логотип">
+            </picture>
           </a>
           <ul class="header__list">
-            <li class="header__item">
+            <li class="header__item header__item--mr">
               <a href="#" class="header__link">
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
@@ -48,7 +50,7 @@
       <div class="header__inner">
         <h1 class="header__title">Печатные платы</h1>
         <p class="header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="" class="header__btn">Получить бесплатную консультацию</a>
+        <a href="#" class="header__btn"><span class="header__btn--table">Получить бесплатную консультацию</span><span class="header__btn--mobile">бесплатная консультация</span></a>
       </div>
     </div>
   </header>
@@ -88,146 +90,147 @@
         </ul>
       </div>
     </section>
-    <section class="about">
-      <div class="container">
-        <picture>
-          <source media="(min-width: 768px)"
-                  srcset="img/company.webp 1x, img/company@2.webp 2x" type="image/webp">
-          <!-- 150x320   300x640-->
-          <img src="img/company.png" srcset="img/company@2.png 2x" width="150" height="320" alt="На фотографии число 2022">
-        </picture>
-        <div class="about__inner">
-          <h2>О компании</h2>
-          <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
-          <p> Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-          <button class="about__btn">Подробнее</button>
-        </div>
-      </div>
-    </section>
-    <section class="products">
-      <div class="container">
-        <h2 class="products__title">Smart Device предлагает следующие товары и услуги</h2>
-        <ul class="products__list">
-          <li class="products__item"><a href="#">
-            <picture>
-              <source media="(max-width: 767px)"
-                      srcset="img/catalog/production-mobile.webp 1x, img/catalog/production-mobile@2x.webp 2x">
-              <source media="(max-width: 1000px)"
-                      srcset="img/catalog/production-tablet.webp 1x, img/catalog/production-tablet@2x.webp 2x">
-              <!-- 350x650   700x1300-->
-              <source type="image/webp" srcset="img/catalog/production-desk.webp 1x, img/catalog/production-desk@2x.webp 2x">
-              <img src="img/catalog/production-desk.jpg" srcset="img/catalog/production-desk@2x.jpg 2x" width="350" height="650" alt="Производство печатных плат">
-            </picture>
-            <p class="products__text">Производство печатных плат</p>
-            <div class="products__box">
-              <svg width="8" height="4">
-                <use xlink:href="img/sprite_auto.svg#icon-mark"></use>
-              </svg>
-            </div>
-          </a>
-          </li>
-          <li class="products__item"><a href="#">
-            <picture>
-              <source media="(max-width: 767px)"
-                      srcset="img/catalog/montage-mobile.webp 1x, img/catalog/montage-mobile@2x.webp 2x">
-              <source media="(max-width: 1000px)"
-                      srcset="img/catalog/montage-tablet.webp 1x, img/catalog/montage-tablet@2x.webp 2x">
-              <!-- 350x650   700x1300-->
-              <source type="image/webp" srcset="img/catalog/montage-desk.webp 1x, img/catalog/montage-desk@2x.webp 2x">
-              <img src="img/catalog/montage-desk.jpg" srcset="img/catalog/montage-desk@2x.jpg 2x" width="350" height="650" alt="Монтаж печатных плат">
-            </picture>
-            <p class="products__text">Монтаж печатных плат</p>
-            <div class="products__box">
-              <svg width="8" height="4">
-                <use xlink:href="img/sprite_auto.svg#icon-mark"></use>
-              </svg>
-            </div>
-          </a>
-          </li>
-          <li class="products__item"><a href="#">
-            <picture>
-              <source media="(max-width: 767px)"
-                      srcset="img/catalog/accessories-mobile.webp 1x, img/catalog/accessories-mobile@2x.webp 2x">
-              <source media="(max-width: 1000px)"
-                      srcset="img/catalog/accessories-tablet.webp 1x, img/catalog/accessories-tablet@2x.webp 2x">
-              <!-- 350x650   700x1300-->
-              <source type="image/webp" srcset="img/catalog/accessories-desk.webp 1x, img/catalog/accessories-desk@2x.webp 2x">
-              <img src="img/catalog/accessories-desk.jpg" srcset="img/catalog/accessories-desk@2x.jpg 2x" width="350" height="650" alt="Монтаж печатных плат">
-            </picture>
-            <p class="products__text">Комплектующие для светотехники</p>
-            <div class="products__box">
-              <svg width="4" height="8">
-                <use xlink:href="img/sprite_auto.svg#icon-mark"></use>
-              </svg>
-            </div>
-          </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="forms">
-      <div class="container">
-        <form action="" method="get">
-          <fieldset>
-            <legend>Остались вопросы? Задайте их нам!</legend>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <div class="forms__inner">
-              <label>
-                <input type="text" placeholder="Имя">
-              </label>
-              <label>
-                <input type="number" placeholder="Телефон">
-              </label>
-            </div>
-            <label>
-              <input type="text" placeholder="Ваш вопрос">
-            </label>
-            <div class="forms__inner">
-              <button type="submit">Задать вопрос</button>
-              <label>
-                Я согласен на обработку  персональных данных
-                <input type="checkbox" name="data">
-              </label>
-            </div>
-          </fieldset>
-        </form>
-      </div>
-    </section>
+<!--    <section class="about">-->
+<!--      <div class="container">-->
+<!--        <picture>-->
+<!--          <source media="(min-width: 768px)"-->
+<!--                  srcset="img/company.webp 1x, img/company@2.webp 2x" type="image/webp">-->
+<!--          &lt;!&ndash; 150x320   300x640&ndash;&gt;-->
+<!--          <img src="img/company.png" srcset="img/company@2.png 2x" width="150" height="320" alt="На фотографии число 2022">-->
+<!--        </picture>-->
+<!--        <div class="about__inner">-->
+<!--          <h2>О компании</h2>-->
+<!--          <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>-->
+<!--          <p> Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>-->
+<!--          <button class="about__btn">Подробнее</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <section class="products">-->
+<!--      <div class="container">-->
+<!--        <h2 class="products__title">Smart Device предлагает следующие товары и услуги</h2>-->
+<!--        <ul class="products__list">-->
+<!--          <li class="products__item"><a href="#">-->
+<!--            <picture>-->
+<!--              <source media="(max-width: 767px)"-->
+<!--                      srcset="img/catalog/production-mobile.webp 1x, img/catalog/production-mobile@2x.webp 2x">-->
+<!--              <source media="(max-width: 1000px)"-->
+<!--                      srcset="img/catalog/production-tablet.webp 1x, img/catalog/production-tablet@2x.webp 2x">-->
+<!--              &lt;!&ndash; 350x650   700x1300&ndash;&gt;-->
+<!--              <source type="image/webp" srcset="img/catalog/production-desk.webp 1x, img/catalog/production-desk@2x.webp 2x">-->
+<!--              <img src="img/catalog/production-desk.jpg" srcset="img/catalog/production-desk@2x.jpg 2x" width="350" height="650" alt="Производство печатных плат">-->
+<!--            </picture>-->
+<!--            <p class="products__text">Производство печатных плат</p>-->
+<!--            <div class="products__box">-->
+<!--              <svg width="8" height="4">-->
+<!--                <use xlink:href="img/sprite_auto.svg#icon-mark"></use>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--          </li>-->
+<!--          <li class="products__item"><a href="#">-->
+<!--            <picture>-->
+<!--              <source media="(max-width: 767px)"-->
+<!--                      srcset="img/catalog/montage-mobile.webp 1x, img/catalog/montage-mobile@2x.webp 2x">-->
+<!--              <source media="(max-width: 1000px)"-->
+<!--                      srcset="img/catalog/montage-tablet.webp 1x, img/catalog/montage-tablet@2x.webp 2x">-->
+<!--              &lt;!&ndash; 350x650   700x1300&ndash;&gt;-->
+<!--              <source type="image/webp" srcset="img/catalog/montage-desk.webp 1x, img/catalog/montage-desk@2x.webp 2x">-->
+<!--              <img src="img/catalog/montage-desk.jpg" srcset="img/catalog/montage-desk@2x.jpg 2x" width="350" height="650" alt="Монтаж печатных плат">-->
+<!--            </picture>-->
+<!--            <p class="products__text">Монтаж печатных плат</p>-->
+<!--            <div class="products__box">-->
+<!--              <svg width="8" height="4">-->
+<!--                <use xlink:href="img/sprite_auto.svg#icon-mark"></use>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--          </li>-->
+<!--          <li class="products__item"><a href="#">-->
+<!--            <picture>-->
+<!--              <source media="(max-width: 767px)"-->
+<!--                      srcset="img/catalog/accessories-mobile.webp 1x, img/catalog/accessories-mobile@2x.webp 2x">-->
+<!--              <source media="(max-width: 1000px)"-->
+<!--                      srcset="img/catalog/accessories-tablet.webp 1x, img/catalog/accessories-tablet@2x.webp 2x">-->
+<!--              &lt;!&ndash; 350x650   700x1300&ndash;&gt;-->
+<!--              <source type="image/webp" srcset="img/catalog/accessories-desk.webp 1x, img/catalog/accessories-desk@2x.webp 2x">-->
+<!--              <img src="img/catalog/accessories-desk.jpg" srcset="img/catalog/accessories-desk@2x.jpg 2x" width="350" height="650" alt="Монтаж печатных плат">-->
+<!--            </picture>-->
+<!--            <p class="products__text">Комплектующие для светотехники</p>-->
+<!--            <div class="products__box">-->
+<!--              <svg width="4" height="8">-->
+<!--                <use xlink:href="img/sprite_auto.svg#icon-mark"></use>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <section class="forms">-->
+<!--      <div class="container">-->
+<!--        <div class="form__img">-->
+<!--          <picture>-->
+<!--            &lt;!&ndash; 510x285   1020x570&ndash;&gt;-->
+<!--            <source type="image/webp" srcset="img/form/airplane.webp 1x, img/form/airplane@2x.webp 2x">-->
+<!--            <img src="img/form/airplane.png" srcset="img/form/airplane@2x.png 2x" width="510" height="285" alt="Планер">-->
+<!--          </picture>-->
+<!--        </div>-->
+<!--        <form class="forms__form" action="" method="get">-->
+<!--            <h2>Остались вопросы? Задайте их нам!</h2>-->
+<!--            <p>Мы проконсультируем Вас бесплатно</p>-->
+<!--            <div class="forms__inner">-->
+<!--              <label>-->
+<!--                <input type="text" placeholder="Имя">-->
+<!--              </label>-->
+<!--              <label>-->
+<!--                <input type="number" placeholder="Телефон">-->
+<!--              </label>-->
+<!--            </div>-->
+<!--          <label>-->
+<!--            <textarea class="form__text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>-->
+<!--          </label>-->
+<!--          <div class="forms__inner">-->
+<!--              <button class="forms__btn" type="submit">Задать вопрос</button>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </section>-->
   </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <a class="footer__logo">
-          <svg width="215" height="55">
-            <use xlink:href="img/sprite_auto.svg#logo"></use>
-          </svg>
-        </a>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a href="#">
-              <svg width="30" height="30">
-                <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a href="#">
-              <svg width="30" height="30">
-                <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a href="#">
-              <svg width="30" height="30">
-                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+<!--  <footer class="footer">-->
+<!--    <div class="container">-->
+<!--      <div class="footer__inner">-->
+<!--        <a class="footer__logo">-->
+<!--          <svg width="215" height="55">-->
+<!--            <use xlink:href="img/sprite_auto.svg#logo"></use>-->
+<!--          </svg>-->
+<!--        </a>-->
+<!--        <ul class="footer__social-list">-->
+<!--          <li class="footer__social-item">-->
+<!--            <a href="#">-->
+<!--              <svg width="30" height="30">-->
+<!--                <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>-->
+<!--              </svg>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="footer__social-item">-->
+<!--            <a href="#">-->
+<!--              <svg width="30" height="30">-->
+<!--                <use xlink:href="img/sprite_auto.svg#icon-ok"></use>-->
+<!--              </svg>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="footer__social-item">-->
+<!--            <a href="#">-->
+<!--              <svg width="30" height="30">-->
+<!--                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>-->
+<!--              </svg>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </footer>-->
 
     <!-- Модалки -->
     <p><a class="btn visually-hidden" href="#" data-open-modal="feedback">modal--feedback link</a></p>
