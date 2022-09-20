@@ -139,12 +139,12 @@
 }
 
 .header__link:hover div {
-  color: #00B2FF;
+  color: $color-bg-blue;
   transition: 0.2s;
 }
 
 .header__link svg {
-  fill: #00B2FF;
+  fill: $color-bg-blue;
 }
 
 .header__link--btn {
@@ -170,8 +170,8 @@
 
 .header__link--btn:hover {
   transition: 0.2s;
-  color: #00B2FF;
-  border-color: #00B2FF;
+  color: $color-bg-blue;
+  border-color: $color-bg-blue;
 }
 
 .header__inner {

@@ -3,6 +3,11 @@
   padding-top: 50px;
 }
 
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .footer__social-list {
   padding: 0;
   list-style: none;
