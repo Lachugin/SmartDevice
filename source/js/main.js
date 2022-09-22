@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {accordion} from "./modules/modals/accordion";
+import {accordion} from './modules/modals/accordion';
+import {scroll} from './modules/modals/scroll';
+import {spoiler} from './modules/modals/spoiler';
 
 // ---------------------------------
 
@@ -10,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  scroll();
+  spoiler();
   accordion();
 
   // Modules

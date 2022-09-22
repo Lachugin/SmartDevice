@@ -1,23 +1,17 @@
-export function accordion() {
-  const accordions = document.querySelectorAll('.accordion');
-  accordions.forEach(el => {
-    el.addEventListener('click', (e) => {
-      const self = e.currentTarget;
-      const control = self.querySelector('.accordion__control');
-      const content = self.querySelector('.accordion__content');
+export const accordion = () => {
+  const listItems = document.querySelectorAll('.footer__list');
+  const buttonClose = document.querySelectorAll('.footer__toggle');
 
-      self.classList.toggle('open');
+  for (const listItem of listItems) {
+    listItem.classList.remove('footer__list--no-js');
+  }
 
-      // если открыт аккордеон
-      if (self.classList.contains('open')) {
-        control.setAttribute('aria-expanded', true);
-        content.setAttribute('aria-hidden', false);
-        content.style.maxHeight = content.scrollHeight + 'px';
-      } else {
-        control.setAttribute('aria-expanded', false);
-        content.setAttribute('aria-hidden', true);
-        content.style.maxHeight = null;
+  buttonClose.forEach((btn) => {
+    btn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      for (const listItem of listItems) {
+        listItem.classList.toggle('footer__list--open');
       }
     });
   });
-}
+};

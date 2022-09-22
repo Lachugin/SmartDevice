@@ -50,7 +50,7 @@
   line-height: 51px;
   color: #041827;
 
-  @media (max-width: 767px ) {
+  @media (max-width: 767px) {
     font-size: 28px;
     line-height: 140.62%;
   }
@@ -63,16 +63,14 @@
   line-height: 22px;
   color: #041827;
 
-  @media (max-width: 767px ) {
+  @media (max-width: 767px) {
     font-size: 14px;
     line-height: 134.4%;
   }
-
 }
 
-.about__text span {
-
-  @media (max-width: 767px ) {
+.about__text .about__text-none {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -85,12 +83,16 @@
   }
 }
 
-.about__text-none {
+.about__box-none {
   display: none;
 }
 
+.about__box-no-js {
+  display: block;
+}
+
 .about__btn {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -98,15 +100,15 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00B2FF;
-  border: 1px solid #00B2FF;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   padding: 14px 50px;
   background: none;
   cursor: pointer;
   margin-top: 24px;
 
-  @media (max-width: 767px ) {
+  @media (max-width: 767px) {
     padding: 10px 40px;
   }
 
@@ -119,5 +121,5 @@
 .about__btn:hover {
   transition: 0.2s;
   color: #ffffff;
-  background: #00B2FF;
+  background: #00b2ff;
 }
