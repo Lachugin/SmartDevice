@@ -100,8 +100,8 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00b2ff;
-  border: 1px solid #00b2ff;
+  color: $color-bg-blue;
+  border: 1px solid $color-bg-blue;
   border-radius: 3px;
   padding: 14px 50px;
   background: none;
@@ -120,6 +120,6 @@
 
 .about__btn:hover {
   transition: 0.2s;
-  color: #ffffff;
-  background: #00b2ff;
+  color: $color-default-white;
+  background: $color-bg-blue;
 }

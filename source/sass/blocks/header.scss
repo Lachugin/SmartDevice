@@ -132,7 +132,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #f2f5f7;
+  color: $color-soft-white;
 
   @media (max-width: 1023px) {
     display: none;
@@ -157,8 +157,8 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #f2f5f7;
-  border: 1px solid #f2f5f7;
+  color: $color-soft-white;
+  border: 1px solid $color-soft-white;
   border-radius: 3px;
   padding: 10px 15px;
   margin-left: 45px;
@@ -200,7 +200,7 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #f2f5f7;
+  color: $color-soft-white;
   margin-bottom: 34px;
 
   @media (max-width: 767px) {
@@ -220,7 +220,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 155%;
-  color: #f2f5f7;
+  color: $color-soft-white;
   max-width: 685px;
 
   @media (max-width: 767px) {
@@ -243,8 +243,8 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #f2f5f7;
-  background: #00b2ff;
+  color: $color-soft-white;
+  background: $color-bg-blue;
   border-radius: 3px;
   padding: 17px 25px;
   margin-top: 45px;
@@ -266,8 +266,8 @@
 .header__btn:hover {
   transition: 0.2s;
   background: none;
-  border: solid 1px #00b2ff;
-  color: #00b2ff;
+  border: solid 1px $color-bg-blue;
+  color: $color-bg-blue;
 }
 
 .header__btn--table {
