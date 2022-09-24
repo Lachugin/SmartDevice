@@ -28,7 +28,7 @@
   }
 }
 
-.products__title--modile {
+.products__modile {
   display: none;
 
   @media (max-width: 767px) {
@@ -37,7 +37,7 @@
   }
 }
 
-.products__title--desk {
+.products__desk {
   display: none;
 
   @media (min-width: 768px) {
@@ -84,9 +84,12 @@
   width: 100%;
 }
 
-.products__item img {
+.product__img {
   width: 100%;
-  position: relative;
+
+  @media (max-width: 1023px) {
+    height: 250px;
+  }
 }
 
 .products__text {

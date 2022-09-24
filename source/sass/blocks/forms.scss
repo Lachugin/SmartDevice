@@ -1,17 +1,17 @@
 .forms {
   position: relative;
   padding-top: 137px;
-  padding-bottom: 250px;
+  padding-bottom: 226px;
   background: $color-form-bg;
 
   @media (max-width: 767px) {
     padding-top: 21px;
-    padding-bottom: 89px;
+    padding-bottom: 72px;
   }
 
   @media (max-width: 1023px) {
     padding-top: 15px;
-    padding-bottom: 126px;
+    padding-bottom: 101px;
   }
 }
 
@@ -24,7 +24,7 @@
   }
 }
 
-.form__img {
+.forms__img {
   margin-top: 110px;
   align-self: start;
   grid-column: 1/5 span;
@@ -32,213 +32,4 @@
   @media (max-width: 1023px) {
     display: none;
   }
-}
-
-.forms__form {
-  margin-left: 20px;
-  margin-right: 10px;
-  grid-column: 7/12 span;
-
-  @media (max-width: 1023px) {
-    margin-left: 0;
-    margin-right: 0;
-    grid-column: 1/1 span;
-  }
-}
-
-.forms__form h2 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
-  margin-bottom: 0;
-  color: $color-default-white;
-
-  @media (max-width: 767px) {
-    font-size: 30px;
-    line-height: 140.62%;
-  }
-}
-
-.forms__form p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-
-  @media (max-width: 1023px) {
-    margin-top: 7px;
-  }
-}
-
-.forms__form .form__text {
-  width: 100%;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-  padding: 25px 15px;
-  min-height: 155px;
-
-  @media (max-width: 767px) {
-    min-height: 180px;
-  }
-}
-
-.form__text::placeholder {
-  display: flex;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-}
-
-.forms__inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 590px;
-  align-content: center;
-  margin-top: 29px;
-  margin-bottom: 20px;
-  column-gap: 30px;
-
-  @media (max-width: 767px) {
-    row-gap: 17px;
-    margin-top: 29px;
-    grid-template-columns: 1fr;
-  }
-
-  @media (max-width: 1023px) {
-    margin-top: 25px;
-    max-width: 100%;
-  }
-}
-
-.forms__inner input {
-  width: 100%;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-  padding: 15px;
-}
-
-.forms__inner input::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-}
-
-.forms__inner label {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-}
-
-.forms__btn {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $color-default-white;
-  padding: 12px 25px;
-  background: $color-bg-header;
-  border-radius: 3px;
-  border: none;
-  min-width: 265px;
-  margin-top: -2px;
-
-  @media (max-width: 1023px) {
-    margin-top: 1px;
-  }
-}
-
-.forms__btn:hover {
-  background: rgba(4, 20, 39, 0.15);
-  border: none;
-  transition: 0.2s;
-}
-
-.forms__inner-check {
-  display: flex;
-  margin-top: 27px;
-  column-gap: 50px;
-
-  @media (max-width: 767px) {
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 23px;
-  }
-
-  @media (max-width: 1023px) {
-    column-gap: 85px;
-  }
-}
-
-.forms__check {
-  display: block;
-  margin-top: 15px;
-  padding-left: 27px;
-  position: relative;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: $color-default-white;
-  opacity: 0.8;
-
-  @media (max-width: 767px) {
-    margin-top: 25px;
-  }
-
-  @media (max-width: 1023px) {
-    margin-top: 9px;
-  }
-}
-
-.forms__check-box {
-  top: 9px;
-  margin-left: -26px;
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  border: 1px solid $color-default-white;
-  border-radius: 2px;
-
-  @media (max-width: 767px) {
-    top: 8px;
-    margin-left: -22px;
-  }
-}
-
-.forms__check-input:checked + .forms__check-box {
-  background: url("../img/svg/check.svg") no-repeat center;
-}
-
-.forms__check-input:focus + .forms__check-box::before {
-  top: 9px;
-  margin-left: -26px;
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  border: 3px solid #9b891b;
-  border-radius: 2px;
 }
