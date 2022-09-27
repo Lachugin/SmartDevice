@@ -63,8 +63,16 @@
   margin: 23px 0 0 10px;
   max-width: 165px;
 
+  @media (max-width: 767px) {
+    margin-top: 5px;
+    column-gap: 15px;
+
+  }
+
   @media (max-width: 1023px) {
     margin: 0;
+    column-gap: 12px;
+    align-items: center;
   }
 }
 
@@ -86,7 +94,7 @@
   column-gap: 43px;
 
   @media (max-width: 767px) {
-    margin-top: 9px;
+    margin-top: 20px;
     grid-template-columns: 1fr;
   }
 
@@ -151,7 +159,7 @@
 }
 
 .footer__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -176,6 +184,10 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 37px;
+
+  @media (max-width: 1024px) {
+    margin-top: 10px;
+  }
 }
 
 .footer__list--open {

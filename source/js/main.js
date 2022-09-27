@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {accordion} from './modules/accordion';
 import {scroll} from './modules/scroll';
 import {spoiler} from './modules/spoiler';
+import {FocusLock} from "./utils/focus-lock";
 
 // ---------------------------------
 

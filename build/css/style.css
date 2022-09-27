@@ -782,7 +782,7 @@ button,
 }
 
 .header__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -804,7 +804,7 @@ button,
 
 .header__btn {
   display: block;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -877,7 +877,7 @@ button,
 }
 
 .advantages__item h3 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -945,7 +945,7 @@ button,
 
 .about__inner h2 {
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1006,7 +1006,7 @@ button,
 }
 
 .products__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1035,11 +1035,11 @@ button,
   margin: 55px 0 0;
 }
 
-.products__item a {
+.products__link {
   position: relative;
 }
 
-.products__item a::after {
+.products__link::after {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
@@ -1057,8 +1057,11 @@ button,
   width: 100%;
 }
 
-.product__img {
+.products__link img {
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 650px;
 }
 
 .products__text {
@@ -1067,7 +1070,7 @@ button,
   top: 25px;
   left: 40px;
   width: 170px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1213,7 +1216,7 @@ button,
 }
 
 .footer__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1311,7 +1314,7 @@ button,
 }
 
 .form h2 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1328,7 +1331,7 @@ button,
   color: #ffffff;
 }
 
-.form textarea {
+.form__inner textarea {
   width: 100%;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
@@ -1340,9 +1343,11 @@ button,
   color: #ffffff;
   padding: 25px 15px;
   min-height: 155px;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
 }
 
-.form textarea::-webkit-input-placeholder {
+.form__inner textarea::-webkit-input-placeholder {
   display: -webkit-box;
   display: flex;
   font-style: normal;
@@ -1352,7 +1357,7 @@ button,
   color: #ffffff;
 }
 
-.form textarea::-moz-placeholder {
+.form__inner textarea::-moz-placeholder {
   display: flex;
   font-style: normal;
   font-weight: 400;
@@ -1361,7 +1366,7 @@ button,
   color: #ffffff;
 }
 
-.form textarea:-ms-input-placeholder {
+.form__inner textarea:-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   font-style: normal;
@@ -1371,7 +1376,7 @@ button,
   color: #ffffff;
 }
 
-.form textarea::-ms-input-placeholder {
+.form__inner textarea::-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   font-style: normal;
@@ -1381,7 +1386,7 @@ button,
   color: #ffffff;
 }
 
-.form textarea::placeholder {
+.form__inner textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,6 +1402,8 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
   max-width: 590px;
   -ms-flex-line-pack: center;
   align-content: center;
@@ -1405,10 +1412,14 @@ button,
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
+  row-gap: 20px;
 }
 
 .form__inner input {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
   width: 100%;
+  display: block;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
@@ -1482,6 +1493,7 @@ button,
   border-radius: 3px;
   border: solid 1px #041827;
   max-width: 265px;
+  margin-top: 14px;
 }
 
 .form__btn:hover {
@@ -1492,26 +1504,23 @@ button,
   transition: 0.2s;
 }
 
-.form__inner-check {
+.form__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 27px;
-  -webkit-column-gap: 50px;
-  -moz-column-gap: 50px;
-  column-gap: 50px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-left: 36px;
 }
 
-.form__inner-span label {
-  display: block;
-  margin-top: 15px;
-  padding-left: 27px;
+.form__checkbox label {
   position: relative;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;
-  opacity: 0.8;
 }
 
 .form__check-box {
@@ -1524,11 +1533,11 @@ button,
   border-radius: 2px;
 }
 
-.form__inner-span input:checked + .form__check-box {
+.form__inner input:checked + .form__check-box {
   background: url("../img/svg/check.svg") no-repeat center;
 }
 
-.form__inner-span input:focus + .form__check-box::before {
+.form__inner input:focus + .form__check-box::before {
   top: 9px;
   margin-left: -26px;
   position: absolute;
@@ -1949,6 +1958,12 @@ button,
   }
 }
 
+@media (max-width: 1024px) {
+  .footer__list {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
@@ -2047,7 +2062,7 @@ button,
     row-gap: 30px;
   }
 
-  .product__img {
+  .products__link img {
     height: 250px;
   }
 
@@ -2096,6 +2111,12 @@ button,
 
   .footer__social-list {
     margin: 0;
+    -webkit-column-gap: 12px;
+    -moz-column-gap: 12px;
+    column-gap: 12px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .footer__accordion-inner {
@@ -2125,19 +2146,11 @@ button,
   }
 
   .form__btn {
-    margin-top: 1px;
+    margin-top: 13px;
   }
 
-  .form__inner-check {
-    -webkit-column-gap: 85px;
-    -moz-column-gap: 85px;
-    column-gap: 85px;
-  }
-
-  .form__inner-span label {
-    margin-top: 9px;
-    font-size: 14px;
-    line-height: 16px;
+  .form__checkbox {
+    margin-left: 26px;
   }
 
   .modal__btn {
@@ -2310,7 +2323,7 @@ button,
 
   .forms {
     padding-top: 21px;
-    padding-bottom: 72px;
+    padding-bottom: 68px;
   }
 
   .footer {
@@ -2348,8 +2361,15 @@ button,
     padding: 0 25px;
   }
 
+  .footer__social-list {
+    margin-top: 5px;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+  }
+
   .footer__accordion-inner {
-    margin-top: 9px;
+    margin-top: 20px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -2408,38 +2428,31 @@ button,
     line-height: 140.62%;
   }
 
-  .form textarea {
+  .form p {
+    font-size: 14px;
+  }
+
+  .form__inner textarea {
     min-height: 180px;
   }
 
   .form__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     row-gap: 17px;
     margin-top: 29px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
-  .form__inner-check {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 23px;
-  }
-
-  .form__inner-span {
-    margin-top: 26px;
-  }
-
-  .form__inner-span label {
-    margin-top: 0;
+  .form__checkbox {
+    margin-left: 28px;
+    margin-top: 10px;
   }
 
   .form__check-box {
